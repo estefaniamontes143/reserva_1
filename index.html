@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reserva de mesas</title>
+</head>
+<body>
+    <div class ="container">
+        <h1>Reserva de mesas 1</h1>
+         
+        <h2>Mesas disponibles</h2>
+        <div id="availableTables" class="table-list"></div>
+
+        <h2>Mesas ocupadas</h2>
+        <div id="occupiedTables" class="table-list"></div>
+
+        <h2>Realizar reservas</h2>
+        <input type="text" id="customerName" placeholder="Nombre del cliente">  
+        <input type="number" id="tableNumber" placeholder="Número de mesa" min="1">
+        <input type="datetime-local" name="reservationDate" id="reservationDateTime">
+        <button id="reserveButton">Reservar mesa</button>
+
+        <h2>Emitir reporte de reservas</h2>
+        <button id="reportButton">Generar reporte</button>
+        <pre id="reportOutput"></pre>
+    </div>
+    <script src="script.js"></script> 
+</body> 
+</html>
